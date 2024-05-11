@@ -19,7 +19,7 @@
   <script src="https://d3js.org/queue.v1.min.js"></script>
   <script src="https://d3js.org/colorbrewer.v1.min.js"></script>
 
-  <title>An Animated Choropleth Map of U.S. Unemployment by County</title>
+  <title>An Animated Choropleth Map of Crime by Iowa County </title>
 </head>
 
 <body>
@@ -36,10 +36,10 @@
 
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="../shortbio.html">About</a></li>
-              <li><a href="../files/koylu_cv_23.pdf">Resume</a></li>
+              <li><a href="../biography.html">About</a></li>
+              <li><a href="../Noah resume Analytics.pdf">Resume</a></li>
               <li class="divider"></li>
-              <li><a href="caglar-koylu@uiowa.edu">Contact</a></li>
+              <li><a href="mailto:noah-wright@uiowa.edu">Contact</a></li>
             </ul>
           </li>
         </ul>
@@ -58,8 +58,8 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>U.S. Unemployment 1990 - 2017 by County</h1>
-              <span class="post-meta">Posted on October 27, 2018</span>
+              <h1>Iowa Property Crime Data 2013 - 2017 by County</h1>
+              <span class="post-meta">Posted on May 10, 2024</span>
             </div>
           </div>
         </div>
@@ -74,9 +74,9 @@
         <svg width="960" height="600"></svg>
         <h3 id="using-the-map">Using the Map</h3>
         <ol>
-          <li>The map will animate automatically to show unemployment rates by county from 1990 to 2017.</li>
+          <li>The map will animate automatically to show property crime data by county from 1990 to 2017.</li>
           <li>At any point, you can hover over the year label (on the right side) to stop the animation.  Moving your cursor horizontally over the year label will automatically update the year that is shown on the choropleth (move left to decrease the year, right to increase the year).</li>
-          <li>Hover over a county to see a tooltip providing the county name and the unemployment rate in that year.</li>
+          <li>Hover over a county to see a tooltip providing the county name and the property crime data in that year.</li>
         </ol>
         <script>
 
@@ -84,7 +84,7 @@
         //enter the name of the feature or geometry collection within the topoJSONFile
         // for example, for the default dataset us.objects.counties, enter counties
         var featureCollection = "counties";
-        var csvFile = "data/unemployment_by_county_year.csv";
+        var csvFile = "data/IowaPropertyCrime.xslx";
         var attributeAlias = "Unemployment Rate (%)";
 
         // enter the minimum and maximum values of the attribute over years
