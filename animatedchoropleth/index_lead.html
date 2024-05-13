@@ -55,8 +55,8 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Percent Children Screened With Elevated Blood Lead Level in Chicago 1999 - 2013 by Community Area</h1>
-              <span class="post-meta">Posted on May 15, 2020</span>
+              <h1>Property Crime 2013 - 2024 by County</h1>
+              <span class="post-meta">Posted on May 10, 2024</span>
             </div>
           </div>
         </div>
@@ -71,30 +71,30 @@
         <svg width="960" height="600"></svg>
         <h3 id="using-the-map">Using the Map</h3>
         <ol>
-          <li>The map will animate automatically to show unemployment rates by county from 1990 to 2017.</li>
+          <li>The map will animate automatically to show property crime by county from 1990 to 2017.</li>
           <li>At any point, you can hover over the year label (on the right side) to stop the animation.  Moving your cursor horizontally over the year label will automatically update the year that is shown on the choropleth (move left to decrease the year, right to increase the year).</li>
-          <li>Hover over a county to see a tooltip providing the county name and the unemployment rate in that year.</li>
+          <li>Hover over a county to see a tooltip providing the county name and property crime in that year.</li>
         </ol>
         <script>
 
         // var topoJSONFile = "data/contour.json";
-        var topoJSONFile = "data/contour.geojson";
+        var topoJSONFile = "data/iowa_counties.json";
         // enter the desired projection - note that input geojson has to be in WGS84 GCS
         var projection = d3.geoTransverseMercator().rotate([87,0]);
         //enter the name of the feature or geometry collection within the topoJSONFile
         // for example, for the default dataset us.objects.polygons, enter polygons
-        var featureCollection = "contour";
+        var featureCollection = "iowa_counties";
         // id field in the topojson file
         var idfield = "area_numbe"
-        var csvFile = "data/ElevatedBloodLeadLevelRate.csv";
-        var attributeAlias = "Lead poisoning rate (%)";
+        var csvFile = "data/IowaPropertyCrime.csv";
+        var attributeAlias = "Property Crime";
 
         // enter the minimum and maximum values of the attribute over years
         // one legend is created based on equal interval classification for all years.
-        var min = 0, max = 40;
+        var min = 0, max = 113;
 
         //enter the beginning year or date/time of animation.
-        var beginTime = 1999, endTime = 2013;
+        var beginTime = 2013, endTime = 2017;
 
         // width and height of map frame
         var height = 600;
