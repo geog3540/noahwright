@@ -16,7 +16,7 @@
   <script src="https://d3js.org/queue.v1.min.js"></script>
   <script src="https://d3js.org/colorbrewer.v1.min.js"></script>
 
-  <title>An Animated Choropleth Map of Blood Lead Poisoning in Chicago Community Areas</title>
+  <title>An Animated Choropleth Map of Property Crime in Iowa Counties</title>
 </head>
 
 <body>
@@ -83,7 +83,7 @@
         var projection = d3.geoTransverseMercator().rotate([87,0]);
         //enter the name of the feature or geometry collection within the topoJSONFile
         // for example, for the default dataset us.objects.polygons, enter polygons
-        var featureCollection = "iowa_counties";
+        var featureCollection = "CountyBoundaries";
         // id field in the topojson file
         var idfield = "FIPS"
         var csvFile = "data/IowaPropertyCrime.csv";
