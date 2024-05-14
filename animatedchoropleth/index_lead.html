@@ -72,6 +72,7 @@
         <h3 id="using-the-map">Using the Map</h3>
         <ol>
           <li>The map will animate automatically to show property crime by county from 1990 to 2017.</li>
+          <li>Black counties do not have data reported for the year shown</li>
           <li>At any point, you can hover over the year label (on the right side) to stop the animation.  Moving your cursor horizontally over the year label will automatically update the year that is shown on the choropleth (move left to decrease the year, right to increase the year).</li>
           <li>Hover over a county to see a tooltip providing the county name and property crime in that year.</li>
         </ol>
@@ -80,7 +81,7 @@
         // var topoJSONFile = "data/contour.json";
         var topoJSONFile = "data/IowaCountyBoundaries.geojson"
         // enter the desired projection - note that input geojson has to be in WGS84 GCS
-        var projection = d3.geoConicConformal().parallels([42 + 4 / 60, 43 + 16 / 60]).rotate([93 + 30 / 60, 0]);
+        var projection = d3.geoConicConformal().parallels([42 + 40 / 60, 43 + 16 / 60]).rotate([93 + 30 / 60, 0]);
         //enter the name of the feature or geometry collection within the topoJSONFile
         // for example, for the default dataset us.objects.polygons, enter polygons
         var featureCollection = "IowaCountyBoundaries";
