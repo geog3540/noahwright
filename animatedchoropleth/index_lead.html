@@ -71,6 +71,7 @@
         <svg width="960" height="600"></svg>
         <h3 id="using-the-map">Using the Map</h3>
         <ol>
+          <li><a class="nav-link" href="index_migration.html">Violent Crime</a></li>
           <li>The map will animate automatically to show property crime by county from 1990 to 2017.</li>
           <li>Black counties do not have data reported for the year shown</li>
           <li>At any point, you can hover over the year label (on the right side) to stop the animation.  Moving your cursor horizontally over the year label will automatically update the year that is shown on the choropleth (move left to decrease the year, right to increase the year).</li>
@@ -88,7 +89,7 @@
         // id field in the topojson file
         var idfield = "FIPS"
         var csvFile = "data/propertyratesIowa.csv";
-        var attributeAlias = "Property Crime";
+        var attributeAlias = "Property Crime Rate per 100,000";
 
         // enter the minimum and maximum values of the attribute over years
         // one legend is created based on equal interval classification for all years.
